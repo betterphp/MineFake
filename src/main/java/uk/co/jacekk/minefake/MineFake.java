@@ -14,7 +14,7 @@ public class MineFake {
 	public static String ADDRESS = "192.168.1.20";
 	public static int PORT = 25565;
 	
-	public static void log(String line){
+	public synchronized static void log(String line){
 		System.out.println("[" + (new SimpleDateFormat("dd/mm/yyyy HH:mm:ss")).format(new Date()) + "]: " + line);
 	}
 	
